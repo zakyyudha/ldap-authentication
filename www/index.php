@@ -11,8 +11,12 @@ $adldap = new Adldap();
 
 $login = new Login($adldap, $config);
 
-// Authenticate user LDAP
-var_dump($login->authenticate('zaky0001', 'passwd123123'));
+// User credentials
+$username = 'some-username';
+$password = 'some-password';
 
-// If authenticated get data user from LDAP
+// Authenticate user from LDAP
+var_dump($login->authenticate($username, $password));
+
+// If authenticated get user data from LDAP
 print_r($login->getUser());

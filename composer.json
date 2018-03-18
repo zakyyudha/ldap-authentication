@@ -1,0 +1,10 @@
+{
+    "require": {
+        "adldap2/adldap2": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ldap\\": "src"
+        }
+    }
+}
